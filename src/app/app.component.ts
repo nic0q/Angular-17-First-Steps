@@ -11,4 +11,6 @@ import { NavComponent } from './nav/nav.component';
 })
 export class AppComponent {
   title = 'Stardew Valley Social UI';
+  total: number = 0
+  add():void {this.total+=1}
 }

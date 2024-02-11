@@ -1,6 +1,15 @@
-<div class="seasons">
+<div >
+  <div>
+    <h4>
+      Season Points {{total}}
+    </h4>
+  </div>
+  <div class="seasons">
     @for (item of games; track $index) {
-      <app-card [phrase]=item.phrase [title]=item.title [url]=item.url>
+      <app-card 
+      (addiEvent)="addi()"
+      [phrase]=item.phrase [title]=item.title [url]=item.url>
       </app-card>
     }
+  </div>
 </div>

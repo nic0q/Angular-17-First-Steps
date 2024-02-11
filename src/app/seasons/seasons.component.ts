@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CardComponent } from '../card/card.component';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-seasons',
   standalone: true,
-  imports: [CardComponent],
+  imports: [CardComponent, NavComponent],
   templateUrl: './seasons.component.html',
   styleUrl: './seasons.component.css'
 })
 export class SeasonsComponent {
+  @Input() total: number = 0
+  addi(){
+    this.total+=1
+  }
   games = [
     {
       id: 0,
