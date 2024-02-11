@@ -1,3 +1,8 @@
 .begin{
-    color: blue;
+    color: orange;
+}
+.seasons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
 }

@@ -1,6 +1,9 @@
-<h3 class="begin">- Hacker Terminal</h3>
-@for (item of games; track $index) {
-  <app-card [phrase]=item.phrase>
-
-  </app-card>
-}
+<h3 class="begin"> Stardew Valley Seasons</h3>
+<div class="seasons">
+  @for (item of games; track $index) {
+    <app-card [phrase]=item.phrase [title]=item.title [url]=item.url>
+  
+    </app-card>
+  }
+  
+</div>
