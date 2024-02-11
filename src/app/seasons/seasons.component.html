@@ -1,0 +1,6 @@
+<div class="seasons">
+    @for (item of games; track $index) {
+      <app-card [phrase]=item.phrase [title]=item.title [url]=item.url>
+      </app-card>
+    }
+</div>
